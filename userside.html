@@ -21,8 +21,8 @@
   <section class="wallet-card">
 
     <h1>BITFONIX WALLET</h1>
-    <p class="welcome">WELCOME BACK FRANKSAMUEL</p>
-    <p class="kyc">VERIFICATION / ACCOUNT KYC TIER 2</p>
+    <p class="welcome">WELCOME BACK, <strong>SAMUEL FRANK</strong></p>
+    <p class="kyc">ACCOUNT STATUS: KYC TIER 2 (LIMITED ACCESS)</p>
 
     <!-- TABS -->
     <div class="tabs">
@@ -42,7 +42,7 @@
 
     <!-- BONUS -->
     <div class="row">
-      <span>Bonus</span>
+      <span>Bonus Balance</span>
       <strong>$2,000.00</strong>
     </div>
 
@@ -51,21 +51,46 @@
       NGN 15,235,977.05
     </div>
 
-    <!-- FUND -->
-    <button class="btn primary">FUND WALLET</button>
+    <!-- ACTION BUTTONS (DISABLED LOOK) -->
+    <button class="btn primary disabled">FUND WALLET (LOCKED)</button>
 
     <!-- COUPON -->
     <div class="coupon">
-      <input type="text" placeholder="COUPON CODE">
-      <button class="btn outline">APPLY COUPON</button>
+      <input type="text" placeholder="COUPON CODE" disabled>
+      <button class="btn outline disabled">APPLY COUPON</button>
     </div>
 
     <!-- WITHDRAW -->
-    <button class="btn outline full">WITHDRAW</button>
+    <button class="btn outline full disabled">WITHDRAW (LOCKED)</button>
+
+    <!-- WARNING / VERIFICATION NOTICE -->
+    <div class="security-warning">
+      <h3>⚠ Account Verification Required</h3>
+      <p>
+        Dear <strong>Samuel Frank</strong>, your account is currently under
+        <strong>Tier 2 verification</strong>. For security and compliance reasons,
+        access to funding, withdrawals, trading, and coupon redemption is
+        temporarily restricted.
+      </p>
+
+      <p>
+        Kindly complete your identity verification to unlock all wallet features.
+        Upon successful verification, your account will be
+        <strong>automatically upgraded to KYC Tier 3.1</strong>.
+      </p>
+
+      <p class="note">
+        ⏳ <strong>Important:</strong> Your coupon code voucher will become active
+        only after verification and will automatically expire
+        <strong>24 hours after approval</strong>.
+      </p>
+
+      <button class="btn verify">VERIFY ACCOUNT NOW</button>
+    </div>
 
   </section>
 
 </div>
 
 </body>
-    </html>
+  </html>
