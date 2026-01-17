@@ -10,7 +10,7 @@ body {
   color: #ffffff;
 }
 
-/* MAIN CONTAINER */
+/* CONTAINER */
 .wallet-container {
   max-width: 420px;
   margin: auto;
@@ -39,27 +39,27 @@ body {
 
 /* CARD */
 .wallet-card {
-  padding: 25px 20px;
+  padding: 24px 18px;
 }
 
 .wallet-card h1 {
   text-align: center;
-  font-size: 26px;
+  font-size: 24px;
   color: #fd961a;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
-.welcome {
+.welcome,
+.kyc {
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   color: #ccc;
+  margin-bottom: 6px;
 }
 
 .kyc {
-  text-align: center;
-  font-size: 12px;
   color: #fd961a;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 /* TABS */
@@ -67,10 +67,10 @@ body {
   display: flex;
   justify-content: space-between;
   background: #1c1c1c;
-  padding: 12px;
+  padding: 10px;
   border-radius: 6px;
-  margin-bottom: 15px;
-  font-size: 12px;
+  margin-bottom: 14px;
+  font-size: 11px;
 }
 
 .tabs span {
@@ -84,10 +84,11 @@ body {
 
 /* BTC VALUES */
 .btc-values {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  font-size: 13px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  font-size: 12px;
+  margin-bottom: 16px;
 }
 
 .btc-values .total {
@@ -99,61 +100,107 @@ body {
 .row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
   font-size: 14px;
+  margin-bottom: 10px;
 }
 
 /* NAIRA */
 .naira {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
-  margin: 18px 0;
+  margin: 14px 0;
 }
 
 /* BUTTONS */
 .btn {
-  padding: 14px;
+  padding: 13px;
   border-radius: 6px;
   border: none;
   cursor: pointer;
   font-size: 14px;
+  width: 100%;
 }
 
-.btn.primary {
-  width: 100%;
+.primary {
   background: #fd961a;
   color: #000;
   font-weight: bold;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
-.btn.outline {
+.outline {
   background: transparent;
   border: 1px solid #444;
   color: #fff;
 }
 
-.btn.full {
-  width: 100%;
-  margin-top: 12px;
+.full {
+  margin-top: 10px;
 }
 
 /* COUPON */
 .coupon {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .coupon input {
   flex: 1;
-  padding: 14px;
+  padding: 12px;
   background: #1a1a1a;
   border: 1px solid #333;
   border-radius: 6px;
   color: #fff;
 }
 
-.coupon input::placeholder {
-  color: #777;
+/* DISABLED STATE */
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
+
+/* WARNING BOX */
+.security-warning {
+  background: #161616;
+  border-left: 4px solid #fd961a;
+  padding: 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.security-warning h3 {
+  color: #fd961a;
+  margin-bottom: 8px;
+}
+
+.security-warning p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.security-warning .note {
+  color: #ffcc80;
+}
+
+/* VERIFY BUTTON */
+.verify {
+  background: #fd961a;
+  color: #000;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE FOR TABLET & PC */
+@media (min-width: 768px) {
+  .wallet-container {
+    max-width: 520px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wallet-container {
+    max-width: 600px;
+  }
+  }
