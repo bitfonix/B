@@ -298,7 +298,34 @@ td {
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .long {
+        width: 90%;
+    }
+}
+
 @media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .one, .two {
+        width: 100%;
+    }
+
+    .long {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .them, .theme {
+        width: 80%;
+        margin-bottom: 20px;
+        height: auto;
+        padding: 20px;
+    }
+
     .sidebar {
         width: 70px;
     }
@@ -361,5 +388,94 @@ td {
     .tab-navigation button {
         padding: 10px;
         font-size: 14px;
+    }
+    .down-select {
+        width: 100%;
+    }
+    .list {
+        flex-direction: column;
+        height: auto;
+    }
+    .list b {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .list b:last-child {
+        border-bottom: none;
+    }
+    .mach {
+        border-bottom: none;
+        border-left: 3px solid white;
+    }
+}
+
+@media (max-width: 576px) {
+    .them, .theme {
+        width: 100%;
+    }
+
+    .peoples {
+        font-size: 16px;
+    }
+
+    .people {
+        font-size: 24px;
+    }
+
+    .userone {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .cir {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .eamilsamlaa {
+        margin-bottom: 5px;
+    }
+
+    .hangside {
+        width: 90%;
+    }
+
+    .lity, .lityu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .lity b, .lityu b {
+        padding: 5px 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .deldiv {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .lete {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .insecond {
+        width: 90%;
+    }
+
+    .lityi, .analises {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .lityi b, .analises b {
+        padding: 5px 0;
     }
 }
