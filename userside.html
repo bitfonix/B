@@ -22,7 +22,7 @@
 
     <h1>BITFONIX WALLET</h1>
     <p class="welcome">WELCOME BACK, <strong>SAMUEL FRANK</strong></p>
-    <p class="kyc">ACCOUNT STATUS: KYC TIER 2 (LIMITED ACCESS)</p>
+    <p class="kyc">ACCOUNT STATUS: <span id="account-type">Normal</span> <span id="premium-badge"></span></p>
 
     <!-- TABS -->
     <div class="tabs">
@@ -40,10 +40,10 @@
       <div class="total">0.0021 BTC</div>
     </div>
 
-    <!-- BONUS -->
+    <!-- BALANCE -->
     <div class="row">
-      <span>Bonus Balance</span>
-      <strong>$2,000.00</strong>
+      <span>Balance</span>
+      <strong id="balance">$0.00</strong>
     </div>
 
     <!-- NAIRA TOTAL -->
@@ -56,9 +56,11 @@
 
     <!-- COUPON -->
     <div class="coupon">
-      <input type="text" placeholder="COUPON CODE" disabled>
-      <button class="btn outline disabled">APPLY COUPON</button>
+      <input type="text" id="coupon-input" placeholder="COUPON CODE">
+      <button class="btn outline" id="apply-coupon-btn">APPLY COUPON</button>
     </div>
+    
+    <div id="notification"></div>
 
     <!-- WITHDRAW -->
     <button class="btn outline full disabled">WITHDRAW (LOCKED)</button>
@@ -92,5 +94,7 @@
 
 </div>
 
+<script src="userside.js"></script>
+
 </body>
-  </html>
+</html>

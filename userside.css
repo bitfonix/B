@@ -192,6 +192,19 @@ body {
   margin-top: 10px;
 }
 
+#premium-badge {
+  font-size: 1em;
+  margin-left: 5px;
+}
+
+#notification {
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+
 /* RESPONSIVE FOR TABLET & PC */
 @media (min-width: 768px) {
   .wallet-container {
@@ -203,4 +216,4 @@ body {
   .wallet-container {
     max-width: 600px;
   }
-  }
+}
